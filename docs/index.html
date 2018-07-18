@@ -2,8 +2,9 @@
 
 </head>
 <body>
-    <h1 id="url"></h1>
+    <pre id="url"></pre>
 </body>
 <script>
-    document.getElementById("url").innerText = window.location.href;
+    document.getElementById("url").innerText = window.location.href + "\n\n\nWindow.External: " + JSON.stringify(window.external);
+    
 </script>
