@@ -6,4 +6,9 @@
 </body>
 <script>
     document.getElementById("url").innerText = window.external.ArlBrowserFormGetAuthTokenCallback();
+    /*
+        ArlBrowserFormOkCallback("message") will close web view and show a popup message inside of ARL
+        ArlBrowserFormCancelCallback() - closes the webview
+        ArlBrowserFormErrorCallback(errorCode, message) 
+    */
 </script>
