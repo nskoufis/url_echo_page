@@ -3,9 +3,11 @@
 </head>
 <body>
     <h1 id="url"></h1>
+    <h1 id="data"></h1>
 </body>
 <script>
     document.getElementById("url").innerText = window.external.ArlBrowserFormGetAuthTokenCallback();
+    document.getElementById("data").innerText = window.location.href;
     /*
         ArlBrowserFormOkCallback("message") will close web view and show a popup message inside of ARL
         ArlBrowserFormCancelCallback() - closes the webview
